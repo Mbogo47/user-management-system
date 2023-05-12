@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>User Registration system</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <span>About</span>
+                    </li>
+                </ul>
+                
+            </nav>
+            
+        </header>
+
+        
+        
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <br>
+
+            <label for="id">ID Number</label>
+            <input type="number" name="id" id="id" placeholder="Enter your ID Number" required>
+            <br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country" required>
+                <option value="">--Select Country--</option>
+                <option value="USA">USA</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Italy">Italy</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+                <option value="Spain">Spain</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br>
+
+            <label for="language">Languages</label>
+            <select name="language" id="language" required>
+                <option value="">--Select Language--</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Italy">Italy</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Russian">Russian</option>
+                <option value="Swahili">Swahili</option>
+                <option value="Mandarin">Mandarin</option>
+            </select>
+
+            <button>Add User</button>
+        </form>
+
+        <h2>User Information Table</h2>
+        <table id="user-table">
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>ID Number</th>
+                <th>Country</th>
+                <th>Languages Spoken</th>
+                <th>Actions</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Darren Barret</td>
+                    <td>123456</td>
+                    <td>USA</td>
+                    <td>English, French</td>
+                    <td><button>Edit</button> <button>Delete</button></td>     
+                </tr>
+
+                <tr>
+                    <td>Lilly Singh</td>
+                    <td>234567</td>
+                    <td>Kenya</td>
+                    <td>English, Swahili</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+
+                <tr>
+                    <td>Alex Wennberg</td>
+                    <td>123456</td>
+                    <td>Italy</td>
+                    <td>English, Italian</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr> 
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
